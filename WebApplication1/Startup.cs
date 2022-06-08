@@ -21,7 +21,7 @@ namespace WebApplication1
         {
             services.AddControllersWithViews();
             services.AddDbContext<AppDbContext>(options =>
-                options.UseSqlServer("Server=DESKTOP-9C7EF1H;Database=HomeTask;Trusted_Connection=True;"));
+                options.UseSqlServer("Server=DESKTOP-9C7EF1H;Database=HomeTask;Integrated Security=true;"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
